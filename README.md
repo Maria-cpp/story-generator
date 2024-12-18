@@ -6,7 +6,10 @@ Linux users
 clone the repository
 go to the directory
 cd story-generator 
+
 code . this is used to open the folder in visual studio
+#Steps For Virtual Environment 
+
 create a virtual environment called venv_name
 
 The command below will create a new folder called venv_name
@@ -28,3 +31,14 @@ Alternatively, choose from the list of environments (bottom left). The Python ve
  now run the file using 
 python main.py
  
+#Steps to run project using Docker
+
+Installation Clone the Repository:
+
+bash Copy code git clone https://github.com/Maria-cpp/story-generator.git cd chatbot Build the Docker Image:
+
+bash Copy code docker build -t chatbot-image . Run the Docker Container:
+
+bash Copy code docker run -d -p 7860:7860 --name chatbot-container chatbot-image Usage Once the Docker container is up and running, you can interact with the chatbot via its API or web interface:
+
+Web Interface: Open a web browser and go to http://localhost:7860 to use the web interface Configuration You can customize the chatbot by modifying the configuration file config.yaml.
